@@ -2,20 +2,29 @@
   "Records": [
     {
       "EventVersion": "1.0",
-      "EventSubscriptionArn": "arn:aws:sns:us-west-2:903779448426:ecs-refarch-ASGSNSTopic-1HYYGRLE39UDU:939e5dda-ad1e-4ad2-b03e-e0ac9663bfd0",
+      "EventSubscriptionArn": "arn:aws:sns:EXAMPLE",
       "EventSource": "aws:sns",
       "Sns": {
         "SignatureVersion": "1",
-        "Timestamp": "2017-05-11T13:29:43.456Z",
-        "Signature": "DSVKfJeEryAaMd2Vxx4+vwdFUIC2edPqb1Ia7Xht/3F8VtU8w8zb+AidbvE1RQuTCsjRmz/+TcF2JRvUTJqV/Ck+eaKVdelmFZS+U7you61YOKX9cB9wNjHJFcx+dlLILED62GxjbiB4LdsNHG/FMqNAy1Vdw6+QAKYtxpJCDRJ6gZgPbGo/Af+OLUh95sqBgDlX5SRqPYzCHce3w6xZahUZvJ8GYV/69f+aJcD7e/L8xScge8+s3rsBtKi1kLqHgWT5rJDPjiimgkHZyVlQcqB/lC2eX8oGQ8SBXP5GWlEAFTnGPDfBgjbjZj1vdveWZpKszoktDQqkXdmhmy1pSw==",
-        "SigningCertUrl": "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-b95095beb82e8f6a046b3aafc7f4149a.pem",
-        "MessageId": "92599a33-640f-535f-9356-cbbd0d889719",
-        "Message": "{\"EC2InstanceId\": \"i-00165b5a0776fc64c\", \"Service\": \"AWS Auto Scaling\", \"AutoScalingGroupName\": \"ecs-refarch-ASGDefault-134KKDDRU3J6O\", \"LifecycleActionToken\": \"9cfb0717-fceb-4a2c-8333-6105ab1b4cb9\", \"containerInstanceId\": \"arn:aws:ecs:us-west-2:903779448426:container-instance/facf5490-1d29-4ec0-adfd-98b074b4a1ff\", \"LifecycleHookName\": \"ecs-refarch-ASGTerminateHook-N40I17H91MM5\", \"RequestId\": \"7e2614f7-d269-46df-99ad-5eca922fc2d8\", \"Time\": \"2017-05-11T13:28:57.164Z\", \"LifecycleTransition\": \"autoscaling:EC2_INSTANCE_TERMINATING\", \"AccountId\": \"903779448426\"}",
-        "MessageAttributes": {},
+        "Timestamp": "1970-01-01T00:00:00.000Z",
+        "Signature": "EXAMPLE",
+        "SigningCertUrl": "EXAMPLE",
+        "MessageId": "95df01b4-ee98-5cb9-9903-4c221d41eb5e",
+        "Message": "Hello from SNS!",
+        "MessageAttributes": {
+          "Test": {
+            "Type": "String",
+            "Value": "TestString"
+          },
+          "TestBinary": {
+            "Type": "Binary",
+            "Value": "TestBinary"
+          }
+        },
         "Type": "Notification",
-        "UnsubscribeUrl": "https://sns.us-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-west-2:903779448426:ecs-refarch-ASGSNSTopic-1HYYGRLE39UDU:939e5dda-ad1e-4ad2-b03e-e0ac9663bfd0",
-        "TopicArn": "arn:aws:sns:us-west-2:903779448426:ecs-refarch-ASGSNSTopic-1HYYGRLE39UDU",
-        "Subject": "Publishing SNS message to invoke lambda again.."
+        "UnsubscribeUrl": "EXAMPLE",
+        "TopicArn": "arn:aws:sns:EXAMPLE",
+        "Subject": "TestInvoke"
       }
     }
   ]
